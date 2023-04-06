@@ -1,4 +1,5 @@
-# <img src="./screenshots/logo.png" height="48">  Game Sign
+# Game Sign
+
 ### See the new games, images, metacritic score, and details.
 
 ## Adobe XD prototype - [link](./Game-Sign.xd)
