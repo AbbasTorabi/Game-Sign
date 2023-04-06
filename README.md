@@ -64,6 +64,8 @@ To install and set up the app, follow these steps:
 4. Run the app on an emulator or device.
 
 ## Usage
+**Note:** this app use [RAWGB API](https://rawg.io/apidocs) (if you are in Iran you should turn on your VPN)
+<br></br>
 To use the app, follow these steps:
 
 1. Open the app.
