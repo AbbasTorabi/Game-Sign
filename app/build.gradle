@@ -1,0 +1,103 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'com.google.dagger.hilt.android'
+    id 'kotlin-parcelize'
+}
+
+android {
+    namespace 'com.abbas.gamesign'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.abbas.gamesign"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField "String", "BASE_URL", '"https://api.rawg.io/api/"'
+            buildConfigField "String", "API_KEY", '"cb7528a81acb402bb4d3905b7f7d7f0c"'
+        }
+        release {
+            minifyEnabled false
+            buildConfigField "String", "BASE_URL", '"https://api.rawg.io/api/"'
+            buildConfigField "String", "API_KEY", '"cb7528a81acb402bb4d3905b7f7d7f0c"'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    // Enable dataBinding
+    buildFeatures {
+        dataBinding true
+    }
+
+
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    // Swipe RefreshLayout
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+
+    // ViewModel lifecycle
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1'
+
+    //ViewModels delegation extensions
+    implementation 'androidx.activity:activity-ktx:1.7.0'
+    implementation 'androidx.fragment:fragment-ktx:1.5.6'
+
+    // Api
+    implementation 'com.squareup.retrofit2:converter-gson:2.7.1'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.1.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.9.0'
+
+    // Kotlin coroutines
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4'
+
+    //Hilt
+    implementation 'com.google.dagger:hilt-android:2.44'
+    kapt 'com.google.dagger:hilt-android-compiler:2.44'
+
+    // Mapstruct
+    implementation 'org.mapstruct:mapstruct:1.5.3.Final'
+    kapt 'org.mapstruct:mapstruct-processor:1.5.3.Final'
+
+    // ViewPump(Font)
+    implementation 'io.github.inflationx:viewpump:2.0.3'
+
+    // Glide
+    implementation 'com.github.bumptech.glide:glide:4.15.0'
+    kapt 'com.github.bumptech.glide:compiler:4.9.0'
+
+    // Slider
+    implementation 'com.github.smarteist:autoimageslider:1.4.0' // Note: Not working with appcompat yet
+
+    // Transformation layout
+    implementation 'com.github.skydoves:transformationlayout:1.1.2'
+
+    implementation "androidx.palette:palette:1.0.0"
+
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+
+}

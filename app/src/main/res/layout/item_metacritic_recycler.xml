@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        setMetacriticBackground="@{viewmodel.model.metaScore}"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:layout_marginEnd="10dp"
+        android:elevation="6dp"
+        app:cardCornerRadius="8dp">
+
+        <View
+            android:layout_width="96dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/metacritic_background" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/platform_icon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            app:imageResource="@{viewmodel.icon}" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/platform_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/platform_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="8dp"
+            android:lines="1"
+            android:text="@{viewmodel.model.platform.name}"
+            android:textColor="@color/lightGray"
+            android:textSize="11sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/platform_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:text="@{String.valueOf(viewmodel.model.metaScore)}"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.abbas.gamesign.ui.viewModel.item.ItemMetacriticViewModel" />
+
+    </data>
+
+</layout>

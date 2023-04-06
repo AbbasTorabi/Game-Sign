@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#35475A</color>
+    <color name="colorPrimaryDark">#283038</color>
+
+    <color name="metacriticBackgroundColor">#3C3530</color>
+    <color name="metacriticGreenColor">#66CC33</color>
+    <color name="metacriticGreenColorAlpha">#3366CC33</color>
+    <color name="metacriticOrangeColor">#FFCC33</color>
+    <color name="metacriticOrangeColorAlpha">#33FFCC33</color>
+    <color name="metacriticRedColor">#FF0000</color>
+    <color name="metacriticRedColorAlpha">#33FF0000</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lightGray">#9F9F9F</color>
+    <color name="gray">#707070</color>
+    <color name="indicatorUnselected">#464748</color>
+    <color name="buttonBackground">#BABABA</color>
+    <color name="loadingPlaceholder">#3335475A</color>
+
+</resources>

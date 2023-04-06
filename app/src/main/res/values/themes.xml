@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.GameSign" parent="Theme.MaterialComponents.Light.NoActionBar">
+<!--        <item name="android:forceDarkAllowed">false</item>-->
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+        <item name="android:navigationBarColor">?attr/colorPrimary</item>
+
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="CollapsedExpandedTitleText" parent="Theme.GameSign">
+        <item name="android:textColor">@android:color/transparent</item>
+    </style>
+
+</resources>

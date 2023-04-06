@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Game Sign</string>
+    <string name="by">by</string>
+    <string name="released_in">released in</string>
+    <string name="description">description</string>
+    <string name="metacritic">metacritic</string>
+</resources>

@@ -1,0 +1,20 @@
+pluginManagement {
+    repositories {
+        google()
+        jcenter() // Must add this because 'com.smarteist.autoimageslider.SliderView' library -> Note: Not work with mavenCentral()
+        mavenCentral()
+        gradlePluginPortal()
+        maven { url "https://www.jitpack.io" }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        jcenter() // Must add this because 'com.smarteist.autoimageslider.SliderView' library -> Note: Not work with mavenCentral()
+        google()
+        mavenCentral()
+        maven { url "https://www.jitpack.io" }
+    }
+}
+rootProject.name = "GameSgin"
+include ':app'
